@@ -10,7 +10,7 @@ int main() {
 	triangle tr;
 
 	// Read inputs and check they are positive numbers
-	std::cout << "Insert the lenghts of the 3 sides of the triangle:"<<std::endl;
+	std::cout << "Insert the lengths of the 3 sides of the triangle:"<<std::endl;
 	
 	std::cin >> tr.l1 >> tr.l2 >> tr.l3;
 	
@@ -22,10 +22,10 @@ int main() {
 	//Check if it is a triangle and identify the type
 	if (tr.isTriangle()) {
 		if (tr.isEquilateral()) {
-			std::cout << "This triangle is isosceles." <<std::endl;
+			std::cout <<  "This triangle is equilateral."  <<std::endl;
 		}
 		else if (tr.isIsosceles()) {
-			std::cout << "This triangle is equilateral." <<std::endl;
+			std::cout << "This triangle is isosceles." <<std::endl;
 		}
 		else if(tr.isScalene()) {
 			std::cout << "This triangle is scalene." <<std::endl;

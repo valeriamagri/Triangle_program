@@ -63,25 +63,8 @@ bool triangle::isScalene(){
 }
 
 
+
 //// Other functions////
-
-
-//Readpos: function for reading a positive number
-/*
- double readpos(){
-	double dummy;
-	std::cin >> dummy;
-	if(std::cin.fail(){
-		std::cout << "Error: you did not insert a number!" <<std::endl;
-	if (dummy<=0 || dummy ==NaN) {
-			std::cout << "Error: length must be a positive number!" <<std::endl;
-		}
-	return dummy;
-	}
-		  
-
-}
-*/
 
 //Maximum: function for finding the maximum value in a given array of n numbers
 double maximum(double *array, int n){

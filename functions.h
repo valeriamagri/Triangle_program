@@ -1,4 +1,3 @@
-
 //Define input type
 class triangle {
 	public:
