@@ -1,7 +1,20 @@
+Triangle program
 This program prints to screen the type of a given triangle: equilateral, isosceles or scalene.
-It asks for three input values which are the lenghts of the three sides of the triangle: checks if these corresponds
-to a real triangle and if true it returns its type.
+It asks for three input values which are the lengths of the three sides of the triangle.
+The program checks if the lengths are positive numbers and if they corresponds to a real triangle (e.g. it is not a line) and if true it returns its type.
 
-Instructions for compiling:
-In the directory there is a makefile, which compiles the program with the default version of gcc by typing: make compile
-In order to run the program is then possible to type: make run
+
+
+Compiling instructions:
+In the directory there is a makefile, which contains the commands to compile and run the program.
+
+Compile with the default version of gcc by typing:	make compile
+Run the program by typing: make run
+Clean the folder: make clean
+
+
+
+
+Notes:
+There is a known issue with the method used for checking if the triangle is real: if two sides have the same value that is much bigger than the third one the program may not recognize the numbers as a triangle, e.g. the triplet (10,10, 1e-20) will not be recognized as a triangle. 
+Nonetheless, this case corresponds basically to having a line instead of a triangle, so I decided not to implement a complicated solution to solve the problem, but it would be possible to do it by representing the numbers in exponential notation in order to keep the contribution of the very small number.
