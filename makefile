@@ -1,11 +1,11 @@
-triangle.o:	;
-	g++ triangle.cpp -c 
+triangle.o: triangle.cpp;
+	g++ -Wall triangle.cpp -c 
 
-functions.o:	;
-	g++ functions.cpp -c
+functions.o: functions.cpp;
+	g++ -Wall functions.cpp -c
 	
 compile:	triangle.o functions.o;
-	g++ triangle.o functions.o -o triangle.x
+	g++ -Wall triangle.o functions.o -o triangle.x
 	
 run: ;
 	./triangle.x	
