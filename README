@@ -1,7 +1,13 @@
-Triangle program
+Triangle program explanation:
 This program prints to screen the type of a given triangle: equilateral, isosceles or scalene.
-It asks for three input values which are the lengths of the three sides of the triangle.
-The program checks if the lengths are positive numbers and if they corresponds to a real triangle (e.g. it is not a line) and if true it returns its type.
+
+It asks for three input values which are the lengths of the three sides of the triangle: I decided to create a class triangle 
+to store the variables and write boolean functions to check for the different types, so that I can decide to do or not to 
+do something depending on the result of the check.
+The program checks if the lengths are positive numbers and if they corresponds to a real triangle (i.e. the three sides can 
+connect and if the triangle is not just a line); it should also discard the numbers if NaN is submitted as a side.
+In case the triangle is recognized, it returns its type by running the methods of the triangle class: I used 'if - else if'  
+so that if one condition is true, the following will not be run.
 
 
 
@@ -10,13 +16,16 @@ In the directory there is a makefile, which contains the commands to compile and
 
 Compile and link with the default version of gcc by typing:	make compile
 Run the program by typing: make run
-Clean the folder: make clean
+Remove the .o files: make clean
 Compile only the functions: make functions.o
 Compile only the main program:  make triangle.o
 
 
 
-
-Notes:
-There is a known issue with the method used for checking if the triangle is real: if two sides have the same value that is much bigger than the third one the program may not recognize the numbers as a triangle, e.g. the triplet (10,10, 1e-20) will not be recognized as a triangle. 
-Nonetheless, this case corresponds basically to having a line instead of a triangle, so I decided not to implement a complicated solution to solve the problem, but it would be possible to do it by representing the numbers in exponential notation in order to keep the contribution of the very small number.
+Known issues:
+There is a known issue with the method used for checking if the triangle is real: if two sides have the same value 
+that is much bigger than the third one the program may not recognize the numbers as a triangle, e.g. the triplet (10,10, 1e-20)
+will not be recognized as a triangle. 
+Nonetheless, this case corresponds basically to having a line instead of a triangle, so I decided not to implement a 
+complicated solution to solve the problem, but it would be possible to do it, e.g. by representing the numbers in exponential 
+notation in order to keep the contribution of the very small number.
