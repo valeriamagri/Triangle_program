@@ -3,7 +3,9 @@ This program prints to screen the type of a given triangle: equilateral, isoscel
 
 It asks for three input values which are the lengths of the three sides of the triangle: I decided to create a class triangle 
 to store the variables and write boolean functions to check for the different types, so that I can decide to do or not to 
-do something depending on the result of the check.
+do something depending on the result of the check. In the program I currently use only one constructor of the class, but I 
+left the other one for future use.
+
 The program checks if the lengths are positive numbers and if they corresponds to a real triangle (i.e. the three sides can 
 connect and if the triangle is not just a line); it should also discard the numbers if NaN is submitted as a side.
 In case the triangle is recognized, it returns its type by running the methods of the triangle class: I used 'if - else if'  
