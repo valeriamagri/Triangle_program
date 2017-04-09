@@ -7,7 +7,7 @@ functions.o: functions.cpp;
 compile:	triangle.o functions.o;
 	g++ -Wall triangle.o functions.o -o triangle.x
 	
-run: ;
+run: triangle.x;
 	./triangle.x	
 	
 clean: ;
