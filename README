@@ -8,9 +8,11 @@ The program checks if the lengths are positive numbers and if they corresponds t
 Compiling instructions:
 In the directory there is a makefile, which contains the commands to compile and run the program.
 
-Compile with the default version of gcc by typing:	make compile
+Compile and link with the default version of gcc by typing:	make compile
 Run the program by typing: make run
 Clean the folder: make clean
+Compile only the functions: make functions.o
+Compile only the main program:  make triangle.o
 
 
 
