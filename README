@@ -1,0 +1,7 @@
+This program prints to screen the type of a given triangle: equilateral, isosceles or scalene.
+It asks for three input values which are the lenghts of the three sides of the triangle: checks if these corresponds
+to a real triangle and if true it returns its type.
+
+Instructions for compiling:
+In the directory there is a makefile, which compiles the program with the default version of gcc by typing: make compile
+In order to run the program is then possible to type: make run
