@@ -9,7 +9,11 @@ Compiling instructions:
 In the directory there is a makefile, which contains the commands to compile and run the program.
 
 Compile with the default version of gcc by typing:	make compile
+<<<<<<< HEAD
 Run the program by typing: make run
+=======
+Run the program by typing:  make run
+>>>>>>> 58831bd0fb49ea136253c3f6a3c288b918f307f6
 Clean the folder: make clean
 
 
